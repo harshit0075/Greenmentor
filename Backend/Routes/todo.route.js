@@ -24,7 +24,7 @@ todoRouter.post("/todo/add", async (req,res)=>{
     }
 })
 
-todoRouter.update("/todo/:ID",async(req,res)=>{
+todoRouter.patch("/todo/:ID",async(req,res)=>{
     try {
         const id = req.params.ID;
         const data=req.body.data;
